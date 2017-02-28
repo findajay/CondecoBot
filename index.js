@@ -55,7 +55,7 @@ app.post('/webhook/', function (req, res) {
 
 // recommended to inject access tokens as environmental variables, e.g.
 // const token = process.env.FB_PAGE_ACCESS_TOKEN
-const token = "<FB_PAGE_ACCESS_TOKEN>"
+const token = "EAAFWPy8TU7kBANuoDpYH3LbiZAXIoCmPuwEM8mWjitpN9RNeRSyiwYxMdDWPWSqoETeHnI3JRo3ZC665HuoO3mLjyH3zVL1uHbmsX3Q7jaGqDxZAiAtLValIXcHvhfshOP4CsuZClARveT4QkMDD6bmuLOJKjGZAIIgar9zkfeAZDZD"
 
 function sendTextMessage(sender, text) {
 	let messageData = { text:text }
