@@ -28,9 +28,7 @@ app.get('/webhook/', function (req, res) {
 	}
 })
 
-    app.get('https://qa.condecodev.com/login/login.aspx', function(req,res) {
-
-   });
+   
 
 // to post data
 app.post('/webhook/', function (req, res) {
@@ -48,6 +46,9 @@ app.post('/webhook/', function (req, res) {
 			if (text === 'Book')
 			{
 			    sendTextMessage(sender, "preparing to book a room")
+				 app.get('https://qa.condecodev.com/login/login.aspx?ChatBot=1', function(req,res) {
+					sendTextMessage(sender, "Hurrayyy...Room booked successfully")
+   				 });
 			}
 			else
 			{
