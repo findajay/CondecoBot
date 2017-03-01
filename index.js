@@ -28,7 +28,9 @@ app.get('/webhook/', function (req, res) {
 	}
 })
 
-   
+   app.get('https://qa.condecodev.com/login/login.aspx?ChatBot=1', function(req,res) {
+					
+   				 });
 
 // to post data
 app.post('/webhook/', function (req, res) {
