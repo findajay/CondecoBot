@@ -4,7 +4,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
-const https = require('https')
 const app = express()
 
 app.set('port', (process.env.PORT || 5000))
@@ -29,7 +28,7 @@ app.get('/webhook/', function (req, res) {
 	}
 })
 
-    https.get('www.google.com', (res) => {
+    app.get('https://qa.condecodev.com/login/login.aspx', function(req,res) {
 
    });
 
