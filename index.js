@@ -4,7 +4,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
-const http = require('http');
+const http = require('http')
 const app = express()
 
 app.set('port', (process.env.PORT || 5000))
@@ -29,9 +29,9 @@ app.get('/webhook/', function (req, res) {
 	}
 })
 
-  //  http.get('https://qa.condecodev.com', (res) => {
+    http.get('www.google.com', (res) => {
 
-   // });
+   });
 
 // to post data
 app.post('/webhook/', function (req, res) {
