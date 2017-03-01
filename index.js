@@ -29,8 +29,6 @@ app.get('/webhook/', function (req, res) {
 })
 
 
-
-http.request(options, callback).end();
 // to post data
 app.post('/webhook/', function (req, res) {
 	let messaging_events = req.body.entry[0].messaging
